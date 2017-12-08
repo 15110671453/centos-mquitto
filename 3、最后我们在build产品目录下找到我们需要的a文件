@@ -1,0 +1,10 @@
+3、最后我们在build产品目录下找到我们需要的a文件
+
+
+macserver:DerivedData admindyn$ xcode-select --print-path
+/Applications/Xcode.app/Contents/Developer
+macserver:DerivedData admindyn$ cd /Applications/Xcode.app/Contents/Developer
+macserver:Developer admindyn$ cd Xcode
+-bash: cd: Xcode: No such file or directory
+macserver:Developer admindyn$ cd /Users/admindyn/Library/Developer/Xcode/DerivedData
+macserver:DerivedData admindyn$
