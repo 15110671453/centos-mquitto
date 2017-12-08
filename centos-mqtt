@@ -1,0 +1,72 @@
+[root@iZ2850357ruZ mqtt]# yum install mosquitto
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirrors.aliyun.com
+ * epel: mirrors.aliyun.com
+ * extras: mirrors.aliyun.com
+ * updates: mirrors.aliyun.com
+Resolving Dependencies
+--> Running transaction check
+---> Package mosquitto.x86_64 0:1.4.13-1.el7 will be installed
+--> Processing Dependency: libwebsockets.so.7()(64bit) for package: mosquitto-1.4.13-1.el7.x86_64
+--> Running transaction check
+---> Package libwebsockets.x86_64 0:1.7.5-1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package               Arch           Version                Repository    Size
+================================================================================
+Installing:
+ mosquitto             x86_64         1.4.13-1.el7           epel         187 k
+Installing for dependencies:
+ libwebsockets         x86_64         1.7.5-1.el7            epel         2.5 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 2.7 M
+Installed size: 3.2 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/2): mosquitto-1.4.13-1.el7.x86_64.rpm                   | 187 kB   00:00     
+(2/2): libwebsockets-1.7.5-1.el7.x86_64.rpm                | 2.5 MB   00:00     
+--------------------------------------------------------------------------------
+Total                                              4.1 MB/s | 2.7 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libwebsockets-1.7.5-1.el7.x86_64                             1/2 
+  Installing : mosquitto-1.4.13-1.el7.x86_64                                2/2 
+  Verifying  : mosquitto-1.4.13-1.el7.x86_64                                1/2 
+  Verifying  : libwebsockets-1.7.5-1.el7.x86_64                             2/2 
+
+Installed:
+  mosquitto.x86_64 0:1.4.13-1.el7                                               
+
+Dependency Installed:
+  libwebsockets.x86_64 0:1.7.5-1.el7                                            
+
+Complete!
+
+
+
+
+
+
+peizhi wen jian path
+
+
+[root@iZ2850357ruZ mqtt]# cd /etc/mosquitto/
+[root@iZ2850357ruZ mosquitto]# ls -la
+total 68
+drwxr-xr-x   2 root root  4096 Dec  8 09:34 .
+drwxr-xr-x 156 root root 12288 Dec  8 09:34 ..
+-rw-r--r--   1 root root   230 Jul  1 19:06 aclfile.example
+-rw-r--r--   1 root root 37730 Jul  1 19:06 mosquitto.conf
+-rw-r--r--   1 root root    23 Jul  1 19:06 pskfile.example
+-rw-r--r--   1 root root   355 Jul  1 19:06 pwfile.example
+[root@iZ2850357ruZ mosquitto]# 
