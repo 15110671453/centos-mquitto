@@ -1,0 +1,1352 @@
+Mac下安装mosquitto
+使用 brew安装 
+brew install mosquitto
+
+启动 但不启用后台启动模式
+
+即命令行启动一次 关闭命令行后 服务停止
+
+
+后台模式
+	停止服务  brew services stop mosquitto
+	启动服务  brew services start mosquitto
+
+
+单次启动
+	mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
+
+Mac下的配置文件
+
+bind_address 127.0.0.1
+port 1883
+
+
+安装日志
+
+	macserver:~ admindyn$ brew install mosquitto
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 3 taps (caskroom/cask, homebrew/core, homebrew/php).
+==> New Formulae
+apm-server
+asciidoctor
+asciidoctorj
+avimetaedit
+bedtools
+chamber
+cling
+clingo
+csvkit
+ddgr
+dislocker
+dnsdist
+docker-ls
+dps8m
+e2tools
+elasticsearch@5.6
+envconsul
+git-appraise
+glib-openssl
+glslviewer
+go-jira
+gutenberg
+heartbeat
+homebrew/php/drush-launcher
+homebrew/php/infection
+homebrew/php/phan@0.10
+homebrew/php/php56-translit
+homebrew/php/php70-meminfo
+homebrew/php/php71-meminfo
+homebrew/php/php71-translit
+homebrew/php/php72-meminfo
+homebrew/php/php72-xdebug
+htslib
+jabba
+joplin
+just
+kaitai-struct-compiler
+keystone
+kibana@5.6
+kontena
+kubeless
+laszip@2
+lgogdownloader
+libbitcoin-database
+libidn2
+libxo
+logstash@5.6
+massren
+mongodb@3.4
+mrboom
+neal
+node@8
+ocaml-findlib
+ocaml-num
+pipenv
+postgresql@9.6
+raylib
+rbenv-chefdk
+restic
+sc-im
+sceptre
+simg2img
+singular
+swift-protobuf
+terraform_landscape
+traefik
+vert
+ydcv
+zip
+==> Updated Formulae
+apr ✔
+apr-util ✔
+ffmpeg ✔
+flow ✔
+glib ✔
+homebrew/php/php70 ✔
+icu4c ✔
+libxml2 ✔
+mono ✔
+nginx ✔
+openssl ✔
+openssl@1.1 ✔
+postgresql ✔
+re2c ✔
+sqlite ✔
+abcm2ps
+abcmidi
+abyss
+ace
+aces_container
+ack
+acmetool
+activemq
+adplug
+advancemame
+adwaita-icon-theme
+afl-fuzz
+agedu
+alexjs
+amazon-ecs-cli
+ammonite-repl
+angband
+angular-cli
+ansible
+ansible-cmdb
+ansible-lint
+ansifilter
+antigen
+apache-geode
+apache-opennlp
+apibuilder-cli
+app-engine-go-64
+app-engine-java
+appscale-tools
+aptly
+arangodb
+archivemount
+aria2
+armadillo
+artifactory
+asciidoc
+aspcud
+aspectj
+assh
+at-spi2-atk
+at-spi2-core
+atk
+atlassian-cli
+ats2-postiats
+aurora-cli
+aws-elasticbeanstalk
+aws-sdk-cpp
+aws-shell
+awscli
+azure-cli
+azure-cli@1
+b2-tools
+babl
+bacula-fd
+bash-preexec
+bash-snippets
+bazaar
+bazel
+bchunk
+bear
+bench
+bento4
+bibtexconv
+binaryen
+bindfs
+bit
+bitcoin
+bitrise
+blink1
+blockhash
+bluepill
+bmake
+boost-mpi
+brew-gem
+bro
+brotli
+bsponmpi
+btfs
+buku
+bwfmetaedit
+byobu
+bzt
+cabal-install
+caf
+calcurse
+camlp4
+camlp5
+carthage
+casperjs
+cassandra@2.2
+ccm
+ceres-solver
+certbot
+certigo
+chakra
+charm
+charm-tools
+check
+checkstyle
+chisel
+chromedriver
+chronograf
+cimg
+citus
+ckan
+clac
+clang-format
+clhep
+clinfo
+clojure
+closure-compiler
+cmake
+cmark
+cnats
+cockatrice
+cockroach
+cocot
+codemod
+coffeescript
+collectd
+commandbox
+conan
+conjure-up
+consul
+consul-template
+convmv
+convox
+cookiecutter
+coq
+corebird
+corsixth
+couchdb
+couchdb-lucene
+cppad
+cpprestsdk
+credstash
+cromwell
+crowdin
+crystal-icr
+curl
+cython
+dar
+davix
+dbhash
+dbus
+dcm2niix
+dcos-cli
+debianutils
+deja-gnu
+dep
+dependency-check
+dhall-json
+dialog
+diff-pdf
+diffoscope
+digdag
+direnv
+django-completion
+dmd
+dmtx-utils
+docfx
+docker
+docker-completion
+docker-compose
+docker-compose-completion
+docker-machine
+docker-machine-completion
+docker-machine-nfs
+docker2aci
+doctl
+doitlive
+dovecot
+druid
+dscanner
+dssim
+dub
+duck
+dvm
+dwdiff
+e2fsprogs
+easyrpg-player
+efl
+ejabberd
+elasticsearch
+emscripten
+erlang
+etcd
+etsh
+exiftool
+exim
+expat
+exploitdb
+eye-d3
+faac
+faas-cli
+fabio
+fail2ban
+fantom
+fcitx-remote-for-osx
+fd
+fdroidserver
+feedgnuplot
+feh
+ffmpeg@2.8
+fibjs
+fifechan
+file-roller
+filebeat
+fio
+firebase-cli
+fish
+flake8
+flatbuffers
+flawfinder
+fluent-bit
+fn
+folly
+fon-flash-cli
+fonttools
+fossil
+fpc
+freeling
+freeswitch
+freetds
+frugal
+fswatch
+fwup
+fzf
+game-music-emu
+gammu
+gandi.cli
+gauge
+gawk
+gdcm
+gdnsd
+geckodriver
+gegl
+geoipupdate
+geoserver
+get_iplayer
+getdns
+geth
+ghc
+gibo
+git
+git-annex
+git-cinnabar
+git-cola
+git-ftp
+git-lfs
+git-quick-stats
+git-review
+git-town
+gitbucket
+gitlab-runner
+gjs
+gjstest
+glade
+glassfish
+glib-networking
+glide
+glog
+glpk
+gmic
+gmime
+gmp
+gmsh
+gmt
+gmt@4
+gnome-recipes
+gnu-time
+gnu-units
+gnupg
+gnuplot
+gnuplot@4
+gnutls
+go
+go@1.8
+goad
+godep
+goenv
+gofabric8
+goffice
+gomplate
+goofys
+google-benchmark
+google-java-format
+gopass
+gosu
+govendor
+gperftools
+gradle
+gradle-completion
+grafana
+grails
+grakn
+graphicsmagick
+gromacs
+groonga
+groovysdk
+grpc
+gsmartcontrol
+gsoap
+gspell
+gst-editing-services
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gst-python
+gst-rtsp-server
+gst-validate
+gstreamer
+gstreamermm
+gtk+3
+gtk-doc
+gtk-gnutella
+gtksourceview3
+gucharmap
+gx
+gx-go
+h2o
+hadolint
+hadoop
+hana
+haproxy
+harfbuzz
+hashcat
+haskell-stack
+heimdal
+hercules
+heroku
+hfstospell
+highlight
+hive
+hivemind
+homebrew/php/brew-php-switcher
+homebrew/php/composer
+homebrew/php/deployer
+homebrew/php/drupalconsole
+homebrew/php/drush
+homebrew/php/igbinary
+homebrew/php/n98-magerun
+homebrew/php/n98-magerun2
+homebrew/php/phan
+homebrew/php/phan@0.8
+homebrew/php/php-code-sniffer
+homebrew/php/php-cs-fixer
+homebrew/php/php54-igbinary
+homebrew/php/php54-molten
+homebrew/php/php54-mongodb
+homebrew/php/php54-redis
+homebrew/php/php55-couchbase
+homebrew/php/php55-dmtx
+homebrew/php/php55-http
+homebrew/php/php55-igbinary
+homebrew/php/php55-imagick
+homebrew/php/php55-intl
+homebrew/php/php55-magickwand
+homebrew/php/php55-memcached
+homebrew/php/php55-meminfo
+homebrew/php/php55-molten
+homebrew/php/php55-mongodb
+homebrew/php/php55-redis
+homebrew/php/php56
+homebrew/php/php56-amqp
+homebrew/php/php56-couchbase
+homebrew/php/php56-dmtx
+homebrew/php/php56-gmp
+homebrew/php/php56-http
+homebrew/php/php56-igbinary
+homebrew/php/php56-imagick
+homebrew/php/php56-intl
+homebrew/php/php56-ioncubeloader
+homebrew/php/php56-magickwand
+homebrew/php/php56-mcrypt
+homebrew/php/php56-memcached
+homebrew/php/php56-meminfo
+homebrew/php/php56-molten
+homebrew/php/php56-mongodb
+homebrew/php/php56-opcache
+homebrew/php/php56-pcntl
+homebrew/php/php56-pdo-dblib
+homebrew/php/php56-pdo-pgsql
+homebrew/php/php56-phalcon
+homebrew/php/php56-pspell
+homebrew/php/php56-redis
+homebrew/php/php56-snmp
+homebrew/php/php56-tidy
+homebrew/php/php56-timecop
+homebrew/php/php70-amqp
+homebrew/php/php70-couchbase
+homebrew/php/php70-gmp
+homebrew/php/php70-http
+homebrew/php/php70-igbinary
+homebrew/php/php70-imagick
+homebrew/php/php70-intl
+homebrew/php/php70-ioncubeloader
+homebrew/php/php70-mcrypt
+homebrew/php/php70-memcached
+homebrew/php/php70-molten
+homebrew/php/php70-mongodb
+homebrew/php/php70-opcache
+homebrew/php/php70-pcntl
+homebrew/php/php70-pdo-dblib
+homebrew/php/php70-pdo-pgsql
+homebrew/php/php70-phalcon
+homebrew/php/php70-pspell
+homebrew/php/php70-redis
+homebrew/php/php70-snmp
+homebrew/php/php70-tidy
+homebrew/php/php70-timecop
+homebrew/php/php71
+homebrew/php/php71-amqp
+homebrew/php/php71-couchbase
+homebrew/php/php71-gmp
+homebrew/php/php71-igbinary
+homebrew/php/php71-imagick
+homebrew/php/php71-intl
+homebrew/php/php71-ioncubeloader
+homebrew/php/php71-mcrypt
+homebrew/php/php71-memcached
+homebrew/php/php71-molten
+homebrew/php/php71-mongodb
+homebrew/php/php71-opcache
+homebrew/php/php71-pcntl
+homebrew/php/php71-pdo-dblib
+homebrew/php/php71-pdo-pgsql
+homebrew/php/php71-phalcon
+homebrew/php/php71-pspell
+homebrew/php/php71-redis
+homebrew/php/php71-snmp
+homebrew/php/php71-tidy
+homebrew/php/php71-timecop
+homebrew/php/php72
+homebrew/php/php72-amqp
+homebrew/php/php72-couchbase
+homebrew/php/php72-gmp
+homebrew/php/php72-http
+homebrew/php/php72-igbinary
+homebrew/php/php72-imagick
+homebrew/php/php72-intl
+homebrew/php/php72-memcached
+homebrew/php/php72-molten
+homebrew/php/php72-mongodb
+homebrew/php/php72-opcache
+homebrew/php/php72-pcntl
+homebrew/php/php72-pdo-dblib
+homebrew/php/php72-pdo-pgsql
+homebrew/php/php72-pspell
+homebrew/php/php72-redis
+homebrew/php/php72-snmp
+homebrew/php/php72-tidy
+homebrew/php/php72-timecop
+homebrew/php/phpcpd
+homebrew/php/phploc
+homebrew/php/phpmyadmin
+homebrew/php/phpunit
+homebrew/php/phpunit@5.7
+homebrew/php/psysh
+homebrew/php/terminus
+homebrew/php/wp-cli
+html-xml-utils
+htmlcleaner
+htmldoc
+httest
+httpd
+huexpress
+hugo
+hyperscan
+hypre
+i2p
+ibex
+icoutils
+idnits
+imagemagick
+imagemagick@6
+imapfilter
+immortal
+infer
+influxdb
+inspircd
+instead
+iperf3
+ipfs
+iron-functions
+ironcli
+irssi
+iso-codes
+ispc
+itstool
+ivykis
+jack
+jena
+jenkins
+jenkins-lts
+jfrog-cli-go
+jhipster
+jmxtrans
+jruby
+json-fortran
+juju
+kerl
+keychain
+kibana
+knot
+knot-resolver
+kobalt
+kompose
+konoha
+kops
+kotlin
+krb5
+kube-aws
+kubectx
+kubernetes-cli
+kubernetes-helm
+kvazaar
+kyoto-tycoon
+kyua
+lablgtk
+languagetool
+lapack
+lastpass-cli
+latexila
+lbdb
+ldc
+lean-cli
+leiningen
+libass
+libassuan
+libatomic_ops
+libbitcoin-blockchain
+libbitcoin-node
+libbitcoin-server
+libcddb
+libcdio
+libcdr
+libcello
+libconfig
+libcouchbase
+libcue
+libdivecomputer
+libebur128
+libetonyek
+libextractor
+libfabric
+libfaketime
+libfixbuf
+libfreehand
+libfreenect
+libgit2-glib
+libgosu
+libgphoto2
+libgraphqlparser
+libgsf
+libgweather
+libhttpseverywhere
+libical
+liblcf
+liblinear
+libmatio
+libmaxminddb
+libmicrohttpd
+libmspub
+libmxml
+libogg
+libopusenc
+libphonenumber
+libpq
+libpqxx
+libqalculate
+libquvi
+libraw
+librdkafka
+libre
+librealsense
+libressl
+librest
+librsync
+libsass
+libsoup
+libswiften
+libtcod
+libtensorflow
+libtiff
+libtins
+libtorrent-rasterbar
+libtrace
+libunistring
+libuv
+libvirt
+libvisio
+libwebsockets
+libwpg
+libwps
+libxc
+libxslt
+lighttpd
+link-grammar
+linkerd
+liquid-dsp
+little-cms2
+lldpd
+logstash
+logtalk
+lsyncd
+lua
+lua@5.1
+lutok
+lwtools
+lxc
+lynis
+macvim
+mailutils
+mairix
+mame
+mapnik
+mapserver
+mariadb
+mariadb@10.0
+mariadb@10.1
+mat
+maven
+mawk
+maxima
+mdds
+media-info
+mediaconch
+megacmd
+memcached
+menhir
+mercurial
+mesalib-glw
+meson
+metricbeat
+mg
+mgba
+micro
+micropython
+midnight-commander
+mighttpd2
+mikutter
+mimic
+mingw-w64
+minimal-racket
+minio
+miniupnpc
+mitie
+mkclean
+mkdocs
+mkvalidator
+mkvtoolnix
+moc
+mockserver
+modd
+modules
+molecule
+monetdb
+mongo-c-driver
+mongodb
+mongoose
+monit
+mono-libgdiplus
+monotone
+mosh
+mosquitto
+mpd
+mpg123
+mpv
+mujs
+multimarkdown
+mupdf
+mupdf-tools
+mvnvm
+mypy
+mysql
+mysql-sandbox
+mysql@5.5
+mysql@5.6
+nano
+nanomsg
+nanomsgxx
+nanopb-generator
+nasm
+natalie
+nativefier
+nats-streaming-server
+ncmpc
+ncmpcpp
+nco
+ncview
+ndpi
+neo4j
+neovim
+netcdf
+netpbm
+nettle
+nfdump
+nghttp2
+nickle
+nmh
+node
+node-build
+node@4
+node@6
+nodebrew
+nomad
+notmuch
+nsd
+nss
+ntl
+ntopng
+nuget
+nuttcp
+nvm
+ocaml
+ocamlbuild
+ocamlsdl
+octave
+offlineimap
+ohcount
+omniorb
+ompl
+oniguruma
+onscripter
+opam
+open-mpi
+open-scene-graph
+opencbm
+opencoarrays
+opencv
+opencv@2
+openfortivpn
+openjazz
+openrtsp
+opensaml
+openshift-cli
+openvdb
+optipng
+opusfile
+orc
+ortp
+osc
+osm2pgrouting
+osm2pgsql
+osquery
+osrm-backend
+ott
+overmind
+pacapt
+packer
+packetbeat
+packetq
+packmol
+paket
+pandoc
+pandoc-citeproc
+pandoc-crossref
+pango
+paperkey
+parallel
+passenger
+payara
+pazpar2
+pcb
+pcl
+pdfcrack
+pdfpc
+pdftoedn
+pdftoipe
+pdns
+pdnsrec
+peco
+pegtl
+percona-server-mongodb
+percona-server@5.5
+percona-server@5.6
+percona-toolkit
+pgpool-ii
+pgroonga
+pgrouting
+phoronix-test-suite
+physfs
+pick
+pike
+pilosa
+pinentry
+pioneer
+pioneers
+planck
+plantuml
+pldebugger
+plzip
+pngquant
+poco
+polyml
+pony-stable
+ponyc
+poppler
+postgis
+postgresql@9.4
+postgresql@9.5
+ppsspp
+pqiv
+pre-commit
+prest
+presto
+primesieve
+proguard
+prometheus
+protobuf
+protobuf-c
+protobuf-swift
+psftools
+pulledpork
+pumba
+pure-ftpd
+purescript
+pushpin
+pwntools
+py2cairo
+py3cairo
+pyenv
+pygobject
+pygobject3
+pyinvoke
+pyqt
+python-markdown
+pyvim
+q
+qbs
+qca
+qcli
+qd
+qscintilla2
+qt
+qtfaststart
+r
+rabbitmq
+radare2
+rakudo-star
+rancher-cli
+rancid
+ratfor
+rbenv-bundler
+rdfind
+re2
+rebar@3
+redex
+redis
+redpen
+regex-opt
+remake
+reminiscence
+resty
+ringojs
+ripgrep
+rocksdb
+rom-tools
+root
+roswell
+rpm
+rtags
+rtv
+ruby
+ruby@1.8
+ruby@1.9
+ruby@2.0
+ruby@2.1
+ruby@2.2
+ruby@2.3
+rust
+rustup-init
+s-nail
+s3cmd
+s6
+sagittarius-scheme
+sassc
+sbcl
+sbt
+scala
+scalaenv
+scalapack
+scalariform
+scalastyle
+scamper
+sccache
+schismtracker
+scipy
+scm-manager
+scons
+screen
+sdl2
+sdl2_gfx
+sdl2_image
+sdl2_mixer
+sdl_gfx
+securefs
+selenium-server-standalone
+sfk
+shadowsocks-libev
+shairport-sync
+shellcheck
+shfmt
+shibboleth-sp
+shpotify
+sile
+silk
+simple-obfs
+sip
+sjk
+skinny
+slackcat
+sleuthkit
+smali
+smartmontools
+snakemake
+solr
+sonarqube
+source-to-image
+sourcekitten
+speedtest-cli
+sphinx-doc
+sql-translator
+sqldiff
+sqlite-analyzer
+sqlmap
+src
+ssdeep
+sslh
+sslmate
+sslyze
+stanford-parser
+statik
+stoken
+stormlib
+streamlink
+strongswan
+stubby
+stunnel
+subnetcalc
+suil
+suite-sparse
+sundials
+supersonic
+suricata
+svgo
+swfmill
+swi-prolog
+swift
+swiftformat
+swiftgen
+swiftlint
+syncthing
+sysbench
+taisei
+tarantool
+task-spooler
+tasksh
+tectonic
+telegraf
+telegram-cli
+teleport
+temporal_tables
+tenyr
+terminal-notifier
+termius
+terraform
+terraform-docs
+terragrunt
+texapp
+texmath
+tfenv
+tgui
+thefuck
+thrift
+tidy-html5
+tinc
+tintin
+tinyxml2
+tippecanoe
+tmuxinator-completion
+tor
+tracebox
+treefrog
+ttyd
+twarc
+txt2tags
+typescript
+u-boot-tools
+uftp
+uncrustify
+upscaledb
+urh
+userspace-rcu
+vagrant-completion
+vala
+vapoursynth
+varnish
+varnish@4
+vault
+vault-cli
+vcdimager
+vert.x
+vim
+vips
+vowpal-wabbit
+vpcs
+vte3
+vtk
+webp
+webpack
+weechat
+wget
+when
+widelands
+wildfly-as
+wine
+winetricks
+wireguard-tools
+wireshark
+wolfssl
+wpcli-completion
+wtf
+wxmaxima
+x265
+xapian
+xclip
+xctool
+xmake
+xmoto
+xmrig
+xonsh
+xrootd
+xtensor
+xxhash
+yadm
+yaf
+yara
+yarn
+yash
+yaz
+yaze-ag
+ykman
+yle-dl
+you-get
+youtube-dl
+yubico-piv-tool
+z80dasm
+zabbix
+zanata-client
+zbackup
+zbar
+zebra
+zenity
+zimg
+zint
+zmqpp
+zorba
+zsh-autosuggestions
+zsh-completions
+zurl
+==> Renamed Formulae
+findbugs -> spotbugs    newsbeuter -> newsboat
+==> Deleted Formulae
+clasp
+geogit
+gringo
+homebrew/php/phan@0.9
+homebrew/php/php72-libsodium
+jboss-as
+jboss-as@5
+libical-glib
+lua@5.3
+
+==> Installing dependencies for mosquitto: c-ares, openssl, libwebsockets
+==> Installing mosquitto dependency: c-are
+==> Downloading https://homebrew.bintray.com/bo
+==> Pouring c-ares-1.13.0.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/c-ares/1.13.0: 70 files, 458.2KB
+==> Installing mosquitto dependency: opens
+==> Downloading https://homebrew.bintray.com/bo
+                                           %
+==> Pouring openssl-1.0.2n.sierra.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/openssl/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2n: 1,792 files, 12.3MB
+==> Installing mosquitto dependency: libwe
+==> Downloading https://homebrew.bintray.com/bo
+       
+
+
+
+
+ Mac 上检查mqtt服务安装  与 启动 mqtt   
+
+
+
+ macserver:mosquitto admindyn$ cd 1.4.14_2/
+macserver:1.4.14_2 admindyn$ ls -la
+total 192
+drwxr-xr-x  16 admindyn  admin    544 12 12 09:11 .
+drwxr-xr-x   3 admindyn  admin    102 12 12 09:11 ..
+drwxr-xr-x   3 admindyn  admin    102  7 11 06:46 .brew
+-rw-r--r--   1 admindyn  admin  65276  7 11 06:46 ChangeLog.txt
+-rw-r--r--   1 admindyn  admin    767 12 12 09:11 INSTALL_RECEIPT.json
+-rw-r--r--   1 admindyn  admin    155  7 11 06:46 LICENSE.txt
+-rw-r--r--   1 admindyn  admin   2026  7 11 06:46 about.html
+drwxr-xr-x   5 admindyn  admin    170  7 11 06:46 bin
+drwxr-xr-x   3 admindyn  admin    102  7 11 06:46 etc
+-rw-r--r--   1 admindyn  admin    588 12 12 09:11 homebrew.mxcl.mosquitto.plist
+drwxr-xr-x   5 admindyn  admin    170  7 11 06:46 include
+drwxr-xr-x   8 admindyn  admin    272  7 11 06:46 lib
+-rw-r--r--   1 admindyn  admin   9230  7 11 06:46 notice.html
+-rw-r--r--   1 admindyn  admin   3026  7 11 06:46 readme.md
+drwxr-xr-x   3 admindyn  admin    102  7 11 06:46 sbin
+drwxr-xr-x   3 admindyn  admin    102  7 11 06:46 share
+macserver:1.4.14_2 admindyn$ pwd
+/usr/local/Cellar/mosquitto/1.4.14_2
+macserver:1.4.14_2 admindyn$ cd etc/
+macserver:etc admindyn$ ls -la
+total 0
+drwxr-xr-x   3 admindyn  admin  102  7 11 06:46 .
+drwxr-xr-x  16 admindyn  admin  544 12 12 09:11 ..
+drwxr-xr-x   6 admindyn  admin  204  7 11 06:46 mosquitto
+macserver:etc admindyn$ cd mosquitto/
+macserver:mosquitto admindyn$ ls -la
+total 104
+drwxr-xr-x  6 admindyn  admin    204  7 11 06:46 .
+drwxr-xr-x  3 admindyn  admin    102  7 11 06:46 ..
+-rw-r--r--  1 admindyn  admin    230  7 11 06:46 aclfile.example
+-rw-r--r--  1 admindyn  admin  37730  7 11 06:46 mosquitto.conf
+-rw-r--r--  1 admindyn  admin     23  7 11 06:46 pskfile.example
+-rw-r--r--  1 admindyn  admin    355  7 11 06:46 pwfile.example
+macserver:mosquitto admindyn$ vi mosquitto.conf 
+macserver:mosquitto admindyn$ pwd
+/usr/local/Cellar/mosquitto/1.4.14_2/etc/mosquitto
+macserver:mosquitto admindyn$ cd ../
+macserver:etc admindyn$ cd ../
+macserver:1.4.14_2 admindyn$ cd bin/
+macserver:bin admindyn$ ls -la
+total 208
+drwxr-xr-x   5 admindyn  admin    170  7 11 06:46 .
+drwxr-xr-x  16 admindyn  admin    544 12 12 09:11 ..
+-r-xr-xr-x   1 admindyn  admin  19844 12 12 09:11 mosquitto_passwd
+-r-xr-xr-x   1 admindyn  admin  42196 12 12 09:11 mosquitto_pub
+-r-xr-xr-x   1 admindyn  admin  37556 12 12 09:11 mosquitto_sub
+macserver:bin admindyn$ cd ../
+macserver:1.4.14_2 admindyn$ cd sbin/
+macserver:sbin admindyn$ ls -la
+total 296
+drwxr-xr-x   3 admindyn  admin     102  7 11 06:46 .
+drwxr-xr-x  16 admindyn  admin     544 12 12 09:11 ..
+-r-xr-xr-x   1 admindyn  admin  150728 12 12 09:11 mosquitto
+macserver:sbin admindyn$ cd ../etc/mosquitto/
+macserver:mosquitto admindyn$ mosquitto -c mosquitto.conf 
+-bash: mosquitto: command not found
+macserver:mosquitto admindyn$ cd ../../sbin/ 
+macserver:sbin admindyn$ mosquitto ../etc/mosquitto/mosquitto.conf 
+-bash: mosquitto: command not found
+macserver:sbin admindyn$ ./mosquitto ../etc/mosquitto/mosquitto.conf 
+Error: Unknown option '../etc/mosquitto/mosquitto.conf'.
+mosquitto version 1.4.14 (build date 2017-10-22 16:34:22+0100)
+
+mosquitto is an MQTT v3.1.1/v3.1 broker.
+
+Usage: mosquitto [-c config_file] [-d] [-h] [-p port]
+
+ -c : specify the broker config file.
+ -d : put the broker into the background after starting.
+ -h : display this help.
+ -p : start the broker listening on the specified port.
+      Not recommended in conjunction with the -c option.
+ -v : verbose mode - enable all logging types. This overrides
+      any logging options given in the config file.
+
+See http://mosquitto.org/ for more information.
+
+macserver:sbin admindyn$ ./mosquitto -c ../etc/mosquitto/mosquitto.conf 
+1513041952: mosquitto version 1.4.14 (build date 2017-10-22 16:34:22+0100) starting
+1513041952: Config loaded from ../etc/mosquitto/mosquitto.conf.
+1513041952: Opening ipv4 listen socket on port 1883.
+1513041952: Error: Can't assign requested address
+macserver:sbin admindyn$                                        
+没有启动成功 报错  我们的ip地址配置错了
+
+macserver:sbin admindyn$ cd ../etc/mosquitto/
+macserver:mosquitto admindyn$ vi mosquitto.conf 
+macserver:mosquitto admindyn$ cd ../../sbin/
+macserver:sbin admindyn$ ./mosquitto -c ../etc/mosquitto/mosquitto.conf 
+1513042195: mosquitto version 1.4.14 (build date 2017-10-22 16:34:22+0100) starting
+1513042195: Config loaded from ../etc/mosquitto/mosquitto.conf.
+1513042195: Opening ipv4 listen socket on port 1883.
+
+启动成功
+
+                                                                                              #                                              ####                                           #####                                          #######                                        ########                                       ###########                                    #############                                  ###############                                #################                              ###################                            ####################                           ########################                       ###########################                    ##############################                 #################################              ###################################            ###################################            ###################################            ###########################################    ############################################## ########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################### 100.0%
+==> Pouring libwebsockets-2.4.1.sierra.bottle.t
+🍺  /usr/local/Cellar/libwebsockets/2.4.1: 34 files, 4.3MB
+==> Installing mosquitto
+==> Downloading https://homebrew.bintray.com/bo
+                                            100.0%
+==> Pouring mosquitto-1.4.14_2.sierra.bottle.ta
+==> Caveats
+mosquitto has been installed with a default configuration file.
+You can make changes to the configuration by editing:
+    /usr/local/etc/mosquitto/mosquitto.conf
+
+To have launchd start mosquitto now and restart at login:
+  brew services start mosquitto
+Or, if you don't want/need a background service you can just run:
+  mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
+==> Summary
+🍺  /usr/local/Cellar/mosquitto/1.4.14_2: 33 files, 629.9KB
+macserver:~ admindyn$ 
